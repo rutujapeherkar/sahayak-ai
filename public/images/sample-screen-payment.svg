@@ -1,0 +1,52 @@
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Window Header -->
+  <rect width="600" height="400" rx="8" fill="#FFFFFF"/>
+  <rect width="600" height="42" fill="#F0F2EF"/>
+  <circle cx="24" cy="21" r="5" fill="#D9DEDA"/>
+  <circle cx="40" cy="21" r="5" fill="#D9DEDA"/>
+  <circle cx="56" cy="21" r="5" fill="#D9DEDA"/>
+  <rect x="80" y="12" width="300" height="18" rx="4" fill="#FFFFFF"/>
+  <text x="92" y="25" font-family="system-ui, sans-serif" font-size="10" fill="#5F6965">https://gras.maharashtra.gov.in/epay/challan/process</text>
+  
+  <!-- Content Header -->
+  <rect x="32" y="60" width="536" height="40" rx="4" fill="#E6F3F3"/>
+  <text x="44" y="80" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#0B5F63">Government Receipt Accounting System (GRAS)</text>
+  <text x="44" y="94" font-family="system-ui, sans-serif" font-size="10" fill="#08484B">e-Treasury Processing Department | Challan No: MH-REV-2026-91823</text>
+  
+  <!-- Fee Summary Box -->
+  <rect x="32" y="112" width="536" height="70" rx="4" fill="#F7F8F6" stroke="#D9DEDA" stroke-width="1"/>
+  <text x="48" y="132" font-family="system-ui, sans-serif" font-size="11" fill="#5F6965">Department Fee (User Charge):</text>
+  <text x="480" y="132" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#17201D">₹ 20.00</text>
+  <text x="48" y="150" font-family="system-ui, sans-serif" font-size="11" fill="#5F6965">Statutory Service Portal Charges (GST Incl.):</text>
+  <text x="480" y="150" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#17201D">₹ 13.60</text>
+  <line x1="48" y1="158" x2="550" y2="158" stroke="#D9DEDA" stroke-width="1"/>
+  <text x="48" y="174" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#17201D">Total Amount Payable:</text>
+  <text x="480" y="174" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#0B5F63">₹ 33.60</text>
+  
+  <!-- Payment Method Radios -->
+  <text x="32" y="206" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#17201D">Select Online Payment Gateway:</text>
+  
+  <rect x="32" y="218" width="260" height="54" rx="4" fill="#FFFFFF" stroke="#0B5F63" stroke-width="2"/>
+  <circle cx="50" cy="245" r="7" fill="#0B5F63"/>
+  <circle cx="50" cy="245" r="3" fill="#FFFFFF"/>
+  <text x="68" y="240" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#0B5F63">UPI / QR Code (Recommended)</text>
+  <text x="68" y="256" font-family="system-ui, sans-serif" font-size="10" fill="#5F6965">Zero surcharge • Instant receipt</text>
+
+  <rect x="308" y="218" width="260" height="54" rx="4" fill="#FFFFFF" stroke="#D9DEDA" stroke-width="1"/>
+  <circle cx="326" cy="245" r="7" fill="#FFFFFF" stroke="#8A928E" stroke-width="1.5"/>
+  <text x="344" y="240" font-family="system-ui, sans-serif" font-size="12" font-weight="500" fill="#17201D">Net Banking / Debit Card</text>
+  <text x="344" y="256" font-family="system-ui, sans-serif" font-size="10" fill="#5F6965">SBI / HDFC / Axis • Standard gateway</text>
+
+  <!-- Captcha & Proceed -->
+  <rect x="32" y="286" width="130" height="34" rx="4" fill="#EBF7F0" stroke="#D9DEDA" stroke-width="1"/>
+  <text x="56" y="308" font-family="Courier, monospace" font-size="16" font-weight="700" fill="#19734A" letter-spacing="4">8 X K 9</text>
+  <rect x="174" y="286" width="160" height="34" rx="4" fill="#FFFFFF" stroke="#D9DEDA" stroke-width="1"/>
+  <text x="186" y="307" font-family="system-ui, sans-serif" font-size="11" fill="#8A928E">Enter Captcha</text>
+
+  <rect x="428" y="340" width="140" height="38" rx="4" fill="#0B5F63"/>
+  <text x="456" y="364" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#FFFFFF">Proceed to Pay</text>
+
+  <text x="32" y="362" font-family="system-ui, sans-serif" font-size="10" fill="#8A928E">Official Statutory Gateway. Do not refresh or press back button.</text>
+
+  <rect width="600" height="400" rx="8" stroke="#D9DEDA" stroke-width="1"/>
+</svg>

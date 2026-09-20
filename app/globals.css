@@ -1,0 +1,131 @@
+@import "tailwindcss";
+
+:root {
+  --bg-app: #F7F8F6;
+  --bg-surface: #FFFFFF;
+  --bg-subtle: #F0F2EF;
+  --border-color: #D9DEDA;
+  --text-primary: #17201D;
+  --text-secondary: #5F6965;
+  --text-muted: #8A928E;
+  
+  --brand-teal: #0B5F63;
+  --brand-dark: #08484B;
+  --brand-teal-light: #E6F3F3;
+  --warm-copper: #B56A32;
+  --warm-copper-light: #FBF3EC;
+
+  --color-success: #19734A;
+  --color-success-bg: #EBF7F0;
+  --color-warning: #A96800;
+  --color-warning-bg: #FDF5E8;
+  --color-danger: #B43A35;
+  --color-danger-bg: #FCEEEC;
+  --color-info: #315F9E;
+  --color-info-bg: #EEF4FC;
+
+  --font-base-size: 16px;
+  --focus-ring: #0B5F63;
+}
+
+html.dark, html[data-theme="dark"] {
+  --bg-app: #0F1413;
+  --bg-surface: #151B19;
+  --bg-subtle: #1C2421;
+  --border-color: #2A3430;
+  --text-primary: #EDF2EF;
+  --text-secondary: #A9B3AE;
+  --text-muted: #6F7A75;
+  
+  --brand-teal: #5EB4B3;
+  --brand-dark: #479A99;
+  --brand-teal-light: #162625;
+  --warm-copper: #D18A4A;
+  --warm-copper-light: #2C211A;
+
+  --color-success: #34D399;
+  --color-success-bg: #13281E;
+  --color-warning: #FBBF24;
+  --color-warning-bg: #2B2312;
+  --color-danger: #F87171;
+  --color-danger-bg: #2D1515;
+  --color-info: #60A5FA;
+  --color-info-bg: #142133;
+
+  --focus-ring: #5EB4B3;
+}
+
+/* High Contrast Mode */
+html[data-contrast="high"] {
+  --border-color: #000000;
+  --text-primary: #000000;
+  --text-secondary: #111111;
+  --brand-teal: #053D40;
+  --brand-teal-light: #E0EBEB;
+  --focus-ring: #000000;
+}
+
+html[data-contrast="high"].dark,
+html[data-contrast="high"][data-theme="dark"] {
+  --bg-app: #000000;
+  --bg-surface: #0A0A0A;
+  --bg-subtle: #141414;
+  --border-color: #FFFFFF;
+  --text-primary: #FFFFFF;
+  --text-secondary: #EEEEEE;
+  --brand-teal: #8FE8E7;
+  --focus-ring: #FFFFFF;
+}
+
+/* Font Size Scaling */
+html[data-text-size="default"] {
+  font-size: 16px;
+}
+
+html[data-text-size="large"] {
+  font-size: 18px;
+}
+
+html[data-text-size="xlarge"] {
+  font-size: 20px;
+}
+
+/* Reduced Motion */
+html[data-reduced-motion="true"] *,
+html[data-reduced-motion="true"] *::before,
+html[data-reduced-motion="true"] *::after {
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001ms !important;
+  scroll-behavior: auto !important;
+}
+
+body {
+  background-color: var(--bg-app);
+  color: var(--text-primary);
+  font-family: var(--font-inter), var(--font-noto-devanagari), system-ui, -apple-system, sans-serif;
+  line-height: 1.55;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Accessible focus visible indicators */
+*:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-subtle);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
