@@ -73,7 +73,7 @@ export default function TaskPage({ params }: TaskPageProps) {
           className="inline-flex items-center gap-1.5 text-xs font-semibold text-[var(--brand-teal)] hover:underline"
         >
           <ArrowLeft className="w-3.5 h-3.5" />
-          <span>{t.common.back} to Service Details</span>
+          <span>{t.common.back}</span>
         </Link>
 
         {/* Digital Confidence Mode Switcher */}
@@ -107,10 +107,7 @@ export default function TaskPage({ params }: TaskPageProps) {
       {/* Task Header & Progress */}
       <div className="rounded-md border border-[var(--border-color)] bg-[var(--bg-surface)] p-6 sm:p-8 space-y-4 shadow-xs">
         <div>
-          <span className="text-xs font-bold text-[var(--brand-teal)] uppercase tracking-wider">
-            Guided Task Navigation
-          </span>
-          <h1 className="text-2xl sm:text-3xl font-bold text-[var(--text-primary)] mt-1">
+          <h1 className="text-2xl sm:text-3xl font-bold text-[var(--text-primary)]">
             {taskPlan.serviceName}
           </h1>
         </div>
@@ -209,14 +206,9 @@ export default function TaskPage({ params }: TaskPageProps) {
         </div>
 
         {/* Explanation */}
-        <div className="space-y-1">
-          <span className="text-xs font-semibold text-[var(--text-muted)] uppercase tracking-wider block">
-            Guidance
-          </span>
-          <p className="text-sm sm:text-base text-[var(--text-primary)] leading-relaxed">
-            {currentStep.explanation}
-          </p>
-        </div>
+        <p className="text-sm sm:text-base text-[var(--text-primary)] leading-relaxed">
+          {currentStep.explanation}
+        </p>
 
         {/* Why it matters */}
         {guidanceMode !== 'simple' && (
@@ -303,8 +295,7 @@ export default function TaskPage({ params }: TaskPageProps) {
           {t.common.officialSourceNote}
         </h3>
         <p className="text-xs text-[var(--text-secondary)]">
-          When your documents and requirements are ready, submit your official application on the
-          authorized government portal:
+          Submit on the official portal:
         </p>
         <OfficialSourceButton
           url={taskPlan.officialSource.url}

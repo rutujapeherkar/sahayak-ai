@@ -42,7 +42,7 @@ export function DocumentChecklist({ serviceId, documents, language }: DocumentCh
   if (!documents || documents.length === 0) {
     return (
       <div className="p-4 rounded-md border border-[var(--border-color)] bg-[var(--bg-subtle)] text-xs text-[var(--text-secondary)]">
-        No specific physical documents are mandated prior to registration for this service.
+        No physical documents required.
       </div>
     );
   }
@@ -60,7 +60,7 @@ export function DocumentChecklist({ serviceId, documents, language }: DocumentCh
         </span>
         {isAllDone && (
           <span className="text-[var(--color-success)] font-semibold flex items-center gap-1">
-            ✓ All documents ready!
+            ✓ Ready!
           </span>
         )}
       </div>
@@ -125,7 +125,7 @@ export function DocumentChecklist({ serviceId, documents, language }: DocumentCh
 
                 {alts && alts.length > 0 && (
                   <p className="text-[10px] text-[var(--text-muted)] italic">
-                    Acceptable options: {alts.join(' • ')}
+                    Options: {alts.join(' • ')}
                   </p>
                 )}
               </div>

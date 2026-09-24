@@ -32,19 +32,19 @@ export default function AccessibilityPage() {
   } = useAccessibility();
 
   const textSizes: { id: TextSize; label: string; desc: string }[] = [
-    { id: 'default', label: t.accessibility.textSizeDefault, desc: 'Standard 16px font size' },
-    { id: 'large', label: t.accessibility.textSizeLarge, desc: 'Enhanced 18px reading scale' },
-    { id: 'xlarge', label: t.accessibility.textSizeXLarge, desc: 'Maximum 20px high visibility' },
+    { id: 'default', label: t.accessibility.textSizeDefault, desc: 'Standard size' },
+    { id: 'large', label: t.accessibility.textSizeLarge, desc: 'Larger text' },
+    { id: 'xlarge', label: t.accessibility.textSizeXLarge, desc: 'Largest text' },
   ];
 
   const contrasts: { id: ContrastMode; label: string; desc: string }[] = [
-    { id: 'default', label: t.accessibility.contrastDefault, desc: 'Curated civic-tech mineral palette' },
-    { id: 'high', label: t.accessibility.contrastHigh, desc: 'Deep black & white high-contrast borders' },
+    { id: 'default', label: t.accessibility.contrastDefault, desc: 'Default colors' },
+    { id: 'high', label: t.accessibility.contrastHigh, desc: 'High contrast' },
   ];
 
   const motions: { id: MotionMode; label: string; desc: string }[] = [
-    { id: 'normal', label: t.accessibility.motionNormal, desc: 'Smooth transitions' },
-    { id: 'reduced', label: t.accessibility.motionReduced, desc: 'Zero animations / instant displays' },
+    { id: 'normal', label: t.accessibility.motionNormal, desc: 'Animations on' },
+    { id: 'reduced', label: t.accessibility.motionReduced, desc: 'No animations' },
   ];
 
   const languages: { id: Language; label: string; sub: string }[] = [
@@ -58,10 +58,6 @@ export default function AccessibilityPage() {
       {/* Header */}
       <div className="border-b border-[var(--border-color)] pb-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div className="space-y-1">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-[var(--brand-teal-light)] text-[var(--brand-teal)] border border-[var(--brand-teal)]/20">
-            <Sliders className="w-3.5 h-3.5" />
-            <span>Inclusive Civic Design</span>
-          </div>
           <h1 className="text-2xl sm:text-3xl font-bold text-[var(--text-primary)]">
             {t.accessibility.pageTitle}
           </h1>
@@ -248,8 +244,7 @@ export default function AccessibilityPage() {
           उत्पन्न व रहिवासी प्रमाणपत्र मार्गदर्शन (Sample Guidance)
         </h2>
         <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
-          {t.accessibility.previewBody} This confirms that your selected font scaling and contrast
-          parameters render crisply without breaking line rhythm or UI hierarchy.
+          {t.accessibility.previewBody}
         </p>
       </div>
     </div>

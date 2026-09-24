@@ -35,14 +35,11 @@ function AssistantContent() {
   useEffect(() => {
     let welcomeText = '';
     if (language === 'mr') {
-      welcomeText =
-        'नमस्कार! मी सहायक AI आहे. तुम्हाला कोणत्या शासकीय योजनेबद्दल, दाखल्याबद्दल किंवा डिजिटल सेवेबद्दल मदत हवी आहे?';
+      welcomeText = 'नमस्कार! तुम्हाला कोणत्या सेवेबद्दल मदत हवी आहे?';
     } else if (language === 'hi') {
-      welcomeText =
-        'नमस्ते! मैं सहायक AI हूँ। आपको किस सरकारी योजना, प्रमाण पत्र या डिजिटल सेवा के संबंध में मार्गदर्शन चाहिए?';
+      welcomeText = 'नमस्ते! आपको किस सेवा के लिए मदद चाहिए?';
     } else {
-      welcomeText =
-        'Hello! I am Sahayak AI. Which civic service, certificate, or welfare scheme can I help guide you through today?';
+      welcomeText = 'Hello! What do you need help with today?';
     }
 
     setMessages([
@@ -181,7 +178,7 @@ function AssistantContent() {
             {loading && (
               <div className="flex items-center gap-2 p-3 rounded-md bg-[var(--bg-subtle)] text-xs text-[var(--text-secondary)] animate-pulse max-w-xs">
                 <span className="w-2 h-2 rounded-full bg-[var(--brand-teal)] animate-ping" />
-                <span>Sahayak is thinking...</span>
+                <span>Understanding...</span>
               </div>
             )}
 
@@ -246,7 +243,7 @@ export default function AssistantPage() {
     <Suspense
       fallback={
         <div className="flex-1 flex items-center justify-center p-8">
-          <div className="text-xs text-[var(--text-muted)]">Loading Assistant...</div>
+          <div className="text-xs text-[var(--text-muted)]">Loading...</div>
         </div>
       }
     >

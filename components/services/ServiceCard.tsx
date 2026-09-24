@@ -59,23 +59,10 @@ export function ServiceCard({ service, compact = false }: ServiceCardProps) {
           </Link>
         </h3>
 
-        {/* Plain language summary */}
-        <p className="text-xs text-[var(--text-secondary)] leading-relaxed line-clamp-3 mb-4">
+        {/* Plain language summary (3-8 words) */}
+        <p className="text-xs text-[var(--text-secondary)] leading-relaxed mb-4">
           {service.shortDescription[language] || service.shortDescription.en}
         </p>
-
-        {/* Who it may help preview */}
-        {!compact && service.whoItMayHelp[language] && service.whoItMayHelp[language].length > 0 && (
-          <div className="space-y-1 mb-4 pt-3 border-t border-[var(--border-color)]/50">
-            <span className="text-[11px] font-semibold text-[var(--text-muted)] block">
-              {t.services.whoItHelps}:
-            </span>
-            <p className="text-xs text-[var(--text-secondary)] flex items-start gap-1.5">
-              <CheckCircle2 className="w-3.5 h-3.5 text-[var(--brand-teal)] shrink-0 mt-0.5" />
-              <span>{service.whoItMayHelp[language][0]}</span>
-            </p>
-          </div>
-        )}
       </div>
 
       {/* Action Buttons */}

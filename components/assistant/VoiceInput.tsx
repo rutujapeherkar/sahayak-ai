@@ -20,6 +20,7 @@ export function VoiceInput({
   label = 'Voice Input',
 }: VoiceInputProps) {
   const isListening = state === 'listening';
+  const isProcessing = state === 'processing';
   const isUnsupported = state === 'unsupported';
 
   if (isUnsupported) {
@@ -37,9 +38,12 @@ export function VoiceInput({
         <button
           type="button"
           onClick={isListening ? onStop : onStart}
+          disabled={isProcessing}
           className={`min-w-[44px] min-h-[44px] px-3 py-2 rounded-md font-medium text-xs flex items-center justify-center gap-2 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--brand-teal)] ${
             isListening
               ? 'bg-[var(--color-danger)] text-white animate-pulse shadow-sm'
+              : isProcessing
+              ? 'bg-[var(--bg-subtle)] border border-[var(--brand-teal)] text-[var(--brand-teal)]'
               : 'border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-primary)] hover:bg-[var(--bg-subtle)]'
           }`}
           aria-label={isListening ? 'Stop Listening' : label}
@@ -49,6 +53,11 @@ export function VoiceInput({
             <>
               <MicOff className="w-4 h-4" />
               <span>Listening... Click to Stop</span>
+            </>
+          ) : isProcessing ? (
+            <>
+              <span className="w-3 h-3 rounded-full border-2 border-[var(--brand-teal)] border-t-transparent animate-spin" />
+              <span>Connecting Mic...</span>
             </>
           ) : (
             <>
@@ -61,7 +70,7 @@ export function VoiceInput({
         {isListening && (
           <span className="inline-flex items-center gap-1.5 text-xs text-[var(--color-danger)] font-medium">
             <span className="w-2 h-2 rounded-full bg-[var(--color-danger)] animate-ping" />
-            Microphone active
+            Microphone active (Speak now)
           </span>
         )}
       </div>

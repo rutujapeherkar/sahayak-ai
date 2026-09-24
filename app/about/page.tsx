@@ -21,10 +21,6 @@ export default function AboutPage() {
     <div className="flex-1 max-w-4xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-8 space-y-8">
       {/* Header */}
       <div className="border-b border-[var(--border-color)] pb-6 space-y-2">
-        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-[var(--brand-teal-light)] text-[var(--brand-teal)] border border-[var(--brand-teal)]/20">
-          <HeartHandshake className="w-3.5 h-3.5" />
-          <span>Product Definition</span>
-        </div>
         <h1 className="text-2xl sm:text-3xl font-bold text-[var(--text-primary)]">
           About Sahayak AI
         </h1>
@@ -35,7 +31,7 @@ export default function AboutPage() {
 
       {/* Core Mission Banner */}
       <div className="rounded-md border border-[var(--border-color)] bg-[var(--bg-surface)] p-6 sm:p-8 space-y-3 shadow-xs">
-        <h2 className="text-lg font-bold text-[var(--text-primary)]">Our Core USP</h2>
+        <h2 className="text-lg font-bold text-[var(--text-primary)]">Our Purpose</h2>
         <blockquote className="border-l-4 border-[var(--brand-teal)] pl-4 py-1 text-base sm:text-lg font-semibold text-[var(--brand-teal)]">
           &ldquo;We don&apos;t replace digital services. We make them usable.&rdquo;
         </blockquote>

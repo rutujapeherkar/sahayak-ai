@@ -44,7 +44,7 @@ export default function ServiceDetailPage({ params }: ServiceDetailPageProps) {
         className="inline-flex items-center gap-1.5 text-xs font-semibold text-[var(--brand-teal)] hover:underline"
       >
         <ArrowLeft className="w-3.5 h-3.5" />
-        <span>{t.common.back} to Services</span>
+        <span>{t.common.back}</span>
       </Link>
 
       {/* Main Header */}
@@ -183,8 +183,7 @@ export default function ServiceDetailPage({ params }: ServiceDetailPageProps) {
               {t.common.officialSourceNote}
             </h3>
             <p className="text-xs text-[var(--text-secondary)] leading-relaxed">
-              {service.disclaimer[language] || service.disclaimer.en} Requirements and procedures
-              may vary. Verify current information on the official portal before submitting.
+              {service.disclaimer[language] || service.disclaimer.en}
             </p>
           </div>
         </div>

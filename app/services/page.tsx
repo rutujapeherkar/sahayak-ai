@@ -90,7 +90,7 @@ export default function ServicesPage() {
       {/* Results Header */}
       <div className="flex items-center justify-between text-xs text-[var(--text-secondary)] pt-2">
         <span>
-          Showing <strong className="text-[var(--text-primary)]">{filteredServices.length}</strong>{' '}
+          <strong className="text-[var(--text-primary)]">{filteredServices.length}</strong>{' '}
           {t.services.resultsFound}
         </span>
       </div>
@@ -120,7 +120,7 @@ export default function ServicesPage() {
             }}
             className="mt-2 px-4 py-2 rounded-md bg-[var(--brand-teal)] text-white text-xs font-semibold hover:bg-[var(--brand-dark)] transition-colors min-h-[40px]"
           >
-            Reset Filters
+            Reset
           </button>
         </div>
       )}

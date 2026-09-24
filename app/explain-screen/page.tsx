@@ -107,10 +107,6 @@ export default function ExplainScreenPage() {
     <div className="flex-1 max-w-5xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-8 space-y-8">
       {/* Header */}
       <div className="border-b border-[var(--border-color)] pb-6 space-y-2">
-        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-[var(--brand-teal-light)] text-[var(--brand-teal)] border border-[var(--brand-teal)]/20">
-          <ScanEye className="w-3.5 h-3.5" />
-          <span>Visual Assistance Layer</span>
-        </div>
         <h1 className="text-2xl sm:text-3xl font-bold text-[var(--text-primary)]">
           {t.screenExplainer.pageTitle}
         </h1>
@@ -173,8 +169,7 @@ export default function ExplainScreenPage() {
           <p className="text-[11px] text-[var(--text-muted)] flex items-center gap-1.5">
             <ShieldAlert className="w-3.5 h-3.5 text-[var(--warm-copper)] shrink-0" />
             <span>
-              Privacy First: Uploaded screenshots are analyzed in-memory and NEVER stored. Never
-              upload bank passwords or PINs.
+              Screenshots are never stored. Never upload passwords or PINs.
             </span>
           </p>
         </div>
@@ -221,7 +216,7 @@ export default function ExplainScreenPage() {
               className="px-5 py-2.5 rounded-md bg-[var(--brand-teal)] text-white text-xs font-semibold hover:bg-[var(--brand-dark)] transition-colors disabled:opacity-50 min-h-[44px] flex items-center gap-2 shadow-xs"
             >
               <ScanEye className="w-4 h-4" />
-              <span>{analyzing ? t.screenExplainer.analyzing : 'Explain This Screen'}</span>
+              <span>{analyzing ? t.screenExplainer.analyzing : t.screenExplainer.pageTitle}</span>
             </button>
           </div>
 

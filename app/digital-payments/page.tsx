@@ -31,26 +31,26 @@ export default function DigitalPaymentsPage() {
   const safetyRules = [
     {
       id: 'rule-pin',
-      title: 'UPI PIN is ONLY for SENDING money',
-      desc: 'You NEVER need to enter your PIN to receive money, get cashback, or claim a lottery. If someone asks for your PIN to send you money, it is 100% a fraud.',
+      title: 'Never share your UPI PIN',
+      desc: 'PIN is only for sending money. Never enter a PIN to receive money.',
       icon: Lock,
     },
     {
       id: 'rule-name',
-      title: 'Always verify the name on your screen',
-      desc: 'When you scan a QR code or enter a phone number, read the official name displayed. Ask the vendor: "Is this your name?" before proceeding.',
+      title: 'Check recipient before paying',
+      desc: 'Verify the name on screen before entering your PIN.',
       icon: QrCode,
     },
     {
       id: 'rule-otp',
-      title: 'Never share OTPs with anyone',
-      desc: 'Bank executives or customer support representatives will NEVER ask for your OTP. Anyone asking for an SMS OTP over the phone is trying to access your account.',
+      title: 'Never share an OTP',
+      desc: 'Banks and officials never ask for your OTP or password.',
       icon: Smartphone,
     },
     {
       id: 'rule-reversal',
-      title: 'Failed payments auto-reverse within 24-48 hours',
-      desc: 'If money was deducted from your account but the shop did not receive it, do not panic. Under RBI guidelines, the interbank network reverses it automatically.',
+      title: 'Failed payments auto-reverse',
+      desc: 'Deducted money usually returns within 24–48 hours.',
       icon: CreditCard,
     },
   ];
@@ -61,7 +61,7 @@ export default function DigitalPaymentsPage() {
       <div className="border-b border-[var(--border-color)] pb-6 space-y-2">
         <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-[var(--color-success-bg)] text-[var(--color-success)] border border-[var(--color-success)]/20">
           <ShieldCheck className="w-3.5 h-3.5" />
-          <span>Educational Guidance Only</span>
+          <span>Safety Guide</span>
         </div>
         <h1 className="text-2xl sm:text-3xl font-bold text-[var(--text-primary)]">
           {t.payments.pageTitle}
@@ -85,17 +85,17 @@ export default function DigitalPaymentsPage() {
           {t.payments.goldenRuleDesc}
         </p>
         <div className="pl-10 pt-2 text-xs text-[var(--text-secondary)]">
-          Remember: <strong>PIN = Pay</strong>. You never type a PIN to receive funds.
+          Remember: <strong>PIN = Pay</strong>. You never type a PIN to receive money.
         </div>
       </div>
 
       {/* Navigation Tabs */}
       <div className="flex items-center gap-2 border-b border-[var(--border-color)] overflow-x-auto pb-1">
         {[
-          { id: 'safety', label: '1. Core Safety Rules' },
-          { id: 'sending', label: '2. How to Pay Safely' },
-          { id: 'failed', label: '3. If Money is Deducted' },
-          { id: 'scams', label: '4. Common Scams to Avoid' },
+          { id: 'safety', label: 'Safety rules' },
+          { id: 'sending', label: 'Send money' },
+          { id: 'failed', label: 'Payment failed' },
+          { id: 'scams', label: 'Stay safe' },
         ].map((tab) => (
           <button
             key={tab.id}
@@ -143,34 +143,34 @@ export default function DigitalPaymentsPage() {
       {activeTab === 'sending' && (
         <div className="rounded-md border border-[var(--border-color)] bg-[var(--bg-surface)] p-6 sm:p-8 space-y-6 animate-in fade-in duration-200 shadow-xs">
           <h2 className="font-bold text-base text-[var(--text-primary)]">
-            Step-by-Step: Making a Safe UPI QR Payment
+            How to send money safely
           </h2>
           <div className="space-y-4">
             {[
               {
                 step: 1,
-                title: 'Open your trusted banking or UPI app',
-                desc: 'Use official apps from Google Play Store or Apple App Store (e.g. BHIM, your bank app).',
+                title: 'Open your UPI app',
+                desc: 'Use your official UPI or bank app.',
               },
               {
                 step: 2,
-                title: 'Tap "Scan QR" and hold your camera over the code',
-                desc: 'Wait for the beep or recognition box. Do not scan random codes received via WhatsApp or SMS from unknown strangers.',
+                title: 'Scan the QR code',
+                desc: 'Point your camera at the shop’s QR code.',
               },
               {
                 step: 3,
-                title: 'Read the name displayed on your phone screen',
-                desc: 'Before entering any amount, confirm the shop name or recipient matches who you intend to pay.',
+                title: 'Check recipient name',
+                desc: 'Confirm the name on screen matches the recipient.',
               },
               {
                 step: 4,
-                title: 'Enter amount and type your 4 or 6-digit UPI PIN secretly',
-                desc: 'Never let anyone look over your shoulder while typing your PIN.',
+                title: 'Enter amount and PIN',
+                desc: 'Enter amount and type your PIN privately.',
               },
               {
                 step: 5,
-                title: 'Check the Green Success Checkmark',
-                desc: 'Show the confirmation screen to the merchant. You will also receive an official SMS from your bank.',
+                title: 'Show confirmation',
+                desc: 'Show the green success screen to the merchant.',
               },
             ].map((s) => (
               <div key={s.step} className="flex items-start gap-3 p-3.5 rounded-md bg-[var(--bg-subtle)] border border-[var(--border-color)]/60 text-xs">
@@ -197,14 +197,13 @@ export default function DigitalPaymentsPage() {
             {t.payments.failedPaymentDesc}
           </p>
           <div className="p-4 rounded-md bg-[var(--bg-subtle)] border border-[var(--border-color)] space-y-2 text-xs">
-            <h3 className="font-semibold text-[var(--text-primary)]">Recommended Actions:</h3>
+            <h3 className="font-semibold text-[var(--text-primary)]">What to do:</h3>
             <ul className="list-disc list-inside space-y-1 text-[var(--text-secondary)] pl-1">
-              <li>Open your transaction history and note the 12-digit UPI Reference / UTR number.</li>
-              <li>Tap &quot;Raise Dispute / Help&quot; directly inside the app.</li>
-              <li>Wait 24 banking hours before making duplicate payments.</li>
+              <li>Note the 12-digit UPI / UTR reference number from transaction history.</li>
+              <li>Tap &quot;Raise Dispute&quot; or &quot;Help&quot; inside your app.</li>
+              <li>Wait 24–48 hours for auto-reversal before paying again.</li>
               <li>
-                <strong>NEVER</strong> search for customer care numbers on Google or social media, as
-                these are often spoofed by cyber criminals.
+                <strong>Never</strong> call customer care numbers from Google or social media.
               </li>
             </ul>
           </div>
@@ -215,21 +214,21 @@ export default function DigitalPaymentsPage() {
       {activeTab === 'scams' && (
         <div className="rounded-md border border-[var(--border-color)] bg-[var(--bg-surface)] p-6 sm:p-8 space-y-4 animate-in fade-in duration-200 shadow-xs">
           <h2 className="font-bold text-base text-[var(--text-primary)]">
-            How to Spot Common Digital Payment Scams
+            Common scams to avoid
           </h2>
           <div className="space-y-3">
             {[
               {
-                title: 'The "Enter PIN to receive money" Scam',
-                desc: 'Fraudster says: "I have sent you ₹5,000 for your used item. Just scan this QR and enter your PIN to claim it." TRUTH: Scanning a QR and entering a PIN ALWAYS DEDUCTS money.',
+                title: 'Enter PIN to receive money',
+                desc: 'Fraudsters say: "Scan this QR and enter PIN to receive money." Truth: You NEVER enter PIN to get money.',
               },
               {
-                title: 'The Fake Electricity / SIM Deactivation SMS',
-                desc: 'SMS says: "Your electricity connection will be disconnected tonight. Call officer at 98xxxx". TRUTH: Real utility departments never send random mobile numbers asking for immediate phone payments.',
+                title: 'Fake bill or disconnection SMS',
+                desc: 'Fake messages threatening power or SIM cutoff. Never pay through links in SMS.',
               },
               {
-                title: 'Screen Sharing / AnyDesk / TeamViewer Scam',
-                desc: 'Caller says: "Download this quick support app to fix your banking error." TRUTH: These apps let callers see your screen and read your OTPs. Never install apps recommended by strangers.',
+                title: 'Screen sharing apps',
+                desc: 'Callers asking to install apps like AnyDesk. Never share your screen with strangers.',
               },
             ].map((scam, i) => (
               <div
@@ -256,9 +255,9 @@ export default function DigitalPaymentsPage() {
         <div className="space-y-2.5">
           {[
             { id: 'c1', label: 'I know that UPI PIN is NEVER required to receive money.' },
-            { id: 'c2', label: 'I will always verify the recipient name before entering my PIN.' },
-            { id: 'c3', label: 'I will never share OTPs or download screen-sharing apps.' },
-            { id: 'c4', label: 'I will not panic if money is deducted during a network failure.' },
+            { id: 'c2', label: 'I will verify the recipient name before entering my PIN.' },
+            { id: 'c3', label: 'I will never share OTPs or install screen-sharing apps.' },
+            { id: 'c4', label: 'I will wait 24–48 hours if a payment fails.' },
           ].map((item) => {
             const checked = !!checklist[item.id];
             return (
@@ -292,11 +291,10 @@ export default function DigitalPaymentsPage() {
       <div className="rounded-md border border-[var(--border-color)] bg-[var(--bg-surface)] p-6 space-y-4 shadow-xs">
         <div className="space-y-1">
           <h2 className="font-semibold text-sm text-[var(--text-primary)]">
-            National Cyber Crime Reporting &amp; NPCI Portals
+            Helpline & Official Portals
           </h2>
           <p className="text-xs text-[var(--text-secondary)]">
-            In case of suspected cyber fraud, report immediately to the National Cyber Crime
-            Helpline: <strong>1930</strong> or visit the official portal:
+            Suspect fraud? Call the Cyber Crime Helpline: <strong>1930</strong> or visit:
           </p>
         </div>
 

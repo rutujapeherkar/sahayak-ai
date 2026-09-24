@@ -6,14 +6,14 @@ export const SERVICES_DATA: Service[] = [
     slug: 'income-certificate',
     category: 'certificates',
     name: {
-      en: 'Income Certificate Guidance',
-      hi: 'आय प्रमाण पत्र मार्गदर्शन',
-      mr: 'उत्पन्न प्रमाणपत्र मार्गदर्शन',
+      en: 'Income Certificate',
+      hi: 'आय प्रमाण पत्र',
+      mr: 'उत्पन्न प्रमाणपत्र',
     },
     shortDescription: {
-      en: 'Official certificate stating the annual income of an individual or family, needed for fee concessions, welfare schemes, and scholarships.',
-      hi: 'व्यक्ति या परिवार की वार्षिक आय प्रमाणित करने वाला आधिकारिक दस्तावेज, जो छात्रवृत्ति और सरकारी योजनाओं के लिए आवश्यक है।',
-      mr: 'कुटुंबाचे किंवा व्यक्तीचे वार्षिक उत्पन्न प्रमाणित करणारा अधिकृत दाखला, जो शैक्षणिक सवलती आणि सरकारी योजनांसाठी लागतो.',
+      en: 'Proof of income',
+      hi: 'आय का प्रमाण',
+      mr: 'उत्पन्नाचा पुरावा',
     },
     whoItMayHelp: {
       en: [
@@ -89,9 +89,9 @@ export const SERVICES_DATA: Service[] = [
       {
         id: 'doc-income',
         name: {
-          en: 'Income Evidence / Declaration',
-          hi: 'आय प्रमाण / स्व-घोषणा',
-          mr: 'उत्पन्नाचा दाखला / तलाठी अहवाल',
+          en: 'Income proof',
+          hi: 'आय प्रमाण',
+          mr: 'उत्पन्नाचा पुरावा',
         },
         description: {
           en: 'Income statement from employer, IT returns, or circle revenue officer report.',
@@ -103,9 +103,9 @@ export const SERVICES_DATA: Service[] = [
       {
         id: 'doc-photo',
         name: {
-          en: 'Recent Passport Size Photograph',
-          hi: 'हालिया पासपोर्ट साइज फोटो',
-          mr: 'अलीकडचा पासपोर्ट आकाराचा फोटो',
+          en: 'Passport photo',
+          hi: 'पासपोर्ट फोटो',
+          mr: 'पासपोर्ट फोटो',
         },
         description: {
           en: 'Clear photograph in JPG/PNG format (typically under 100 KB).',
@@ -119,9 +119,9 @@ export const SERVICES_DATA: Service[] = [
       {
         stepNumber: 1,
         title: {
-          en: 'Understand Purpose and Jurisdiction',
-          hi: 'उद्देश्य और तहसील समझें',
-          mr: 'उद्देश आणि अधिकारक्षेत्र समजून घ्या',
+          en: 'Understand the service',
+          hi: 'सेवा समझें',
+          mr: 'सेवा समजून घ्या',
         },
         explanation: {
           en: 'Check if you need a 1-year or 3-year income certificate and identify your local revenue office (Tehsil).',
@@ -147,9 +147,9 @@ export const SERVICES_DATA: Service[] = [
       {
         stepNumber: 2,
         title: {
-          en: 'Gather and Check Required Documents',
-          hi: 'आवश्यक दस्तावेज एकत्र करें और जांचें',
-          mr: 'आवश्यक कागदपत्रे गोळा करा आणि तपासा',
+          en: 'Check your documents',
+          hi: 'दस्तावेज जांचें',
+          mr: 'कागदपत्रे तपासा',
         },
         explanation: {
           en: 'Keep your Aadhaar card, electricity bill, ration card, and income proof ready as digital scans (PDF or JPG).',
@@ -170,9 +170,9 @@ export const SERVICES_DATA: Service[] = [
       {
         stepNumber: 3,
         title: {
-          en: 'Submit on Official State Service Portal',
-          hi: 'आधिकारिक राज्य सेवा पोर्टल पर आवेदन करें',
-          mr: 'अधिकृत शासकीय पोर्टलवर (आपले सरकार) अर्ज भरा',
+          en: 'Apply online',
+          hi: 'ऑनलाइन आवेदन करें',
+          mr: 'ऑनलाइन अर्ज करा',
         },
         explanation: {
           en: 'Log in to your state public service portal (e.g. Aaple Sarkar in Maharashtra or ServicePlus in other states).',
@@ -194,9 +194,9 @@ export const SERVICES_DATA: Service[] = [
       {
         stepNumber: 4,
         title: {
-          en: 'Track Status and Download Digital Certificate',
-          hi: 'स्थिति ट्रैक करें और डिजिटल प्रमाणपत्र डाउनलोड करें',
-          mr: 'अर्जाची स्थिती तपासा आणि डिजिटल सहीचा दाखला डाउनलोड करा',
+          en: 'Download certificate',
+          hi: 'प्रमाणपत्र डाउनलोड करें',
+          mr: 'दाखला डाउनलोड करा',
         },
         explanation: {
           en: 'The application is reviewed by the Revenue Assistant and signed digitally by the Tehsildar (typically within 7 to 15 days).',
@@ -232,9 +232,9 @@ export const SERVICES_DATA: Service[] = [
       mr: ['उत्पन्न प्रमाणपत्र', 'उत्पन्नाचा दाखला', 'तहसीलदार दाखला', 'उत्पन्न', 'उत्पन्नाचे प्रमाणपत्र'],
     },
     disclaimer: {
-      en: 'Sahayak AI provides step-by-step guidance only. Final certificate issuance is governed exclusively by the competent Revenue Authority.',
-      hi: 'सहायक एआई केवल चरण-दर-चरण मार्गदर्शन प्रदान करता है। प्रमाणपत्र जारी करने का अंतिम अधिकार संबंधित राजस्व विभाग के पास है।',
-      mr: 'सहायक एआय केवळ मार्गदर्शनासाठी आहे. दाखला मंजूर करण्याचे सर्व अधिकार संबंधित महसूल विभागाकडे आहेत.',
+      en: 'Requirements may change. Verify on the official portal before submitting.',
+      hi: 'नियम बदल सकते हैं। अंतिम आवेदन से पहले आधिकारिक पोर्टल पर जांचें।',
+      mr: 'नियम बदलू शकतात. अर्ज सादर करण्यापूर्वी अधिकृत पोर्टल तपासून घ्या.',
     },
   },
   {
@@ -242,14 +242,14 @@ export const SERVICES_DATA: Service[] = [
     slug: 'residence-certificate',
     category: 'certificates',
     name: {
-      en: 'Residence / Domicile Certificate Guidance',
-      hi: 'निवास / अधिवास प्रमाण पत्र मार्गदर्शन',
-      mr: 'अधिवास व रहिवासी प्रमाणपत्र मार्गदर्शन',
+      en: 'Residence Certificate',
+      hi: 'निवास प्रमाण पत्र',
+      mr: 'रहिवासी दाखला',
     },
     shortDescription: {
-      en: 'Proof that an individual has lived in a specific state or jurisdiction for a continuous period (usually 10-15 years), required for admissions and jobs.',
-      hi: 'यह प्रमाणित करने वाला दस्तावेज कि व्यक्ति किसी राज्य में निरंतर अवधि से निवास कर रहा है, जो स्कूल/कॉलेज प्रवेश और नौकरियों के लिए अनिवार्य है।',
-      mr: 'एखादी व्यक्ती त्या राज्यात सलग वास्तव्यास असल्याचा (साधारण १० ते १५ वर्षे) अधिकृत पुरावा, जो शिक्षण आणि नोकरीसाठी आवश्यक असतो.',
+      en: 'Proof of residence',
+      hi: 'निवास का प्रमाण',
+      mr: 'वास्तव्याचा पुरावा',
     },
     whoItMayHelp: {
       en: [
@@ -306,9 +306,9 @@ export const SERVICES_DATA: Service[] = [
       {
         id: 'res-continuous',
         name: {
-          en: 'Continuous Residence Evidence (10-15 yrs)',
-          hi: 'निरंतर निवास का प्रमाण (10-15 वर्ष)',
-          mr: 'सलग वास्तव्याचा पुरावा (१०-१५ वर्षे)',
+          en: 'Residence proof (10-15 yrs)',
+          hi: 'निवास प्रमाण (10-15 वर्ष)',
+          mr: 'वास्तव्याचा पुरावा (१०-१५ वर्षे)',
         },
         description: {
           en: 'School Leaving Certificate showing birthplace/schooling years or consecutive electricity/tax bills.',
@@ -320,9 +320,9 @@ export const SERVICES_DATA: Service[] = [
       {
         id: 'res-ration',
         name: {
-          en: 'Ration Card / Current Address Proof',
-          hi: 'राशन कार्ड / वर्तमान पता प्रमाण',
-          mr: 'रेशन कार्ड / चालू पत्त्याचा पुरावा',
+          en: 'Address proof',
+          hi: 'पता प्रमाण',
+          mr: 'पत्त्याचा पुरावा',
         },
         description: {
           en: 'Ration card with applicant or parent name listed.',
@@ -336,9 +336,9 @@ export const SERVICES_DATA: Service[] = [
       {
         stepNumber: 1,
         title: {
-          en: 'Verify Eligibility Period',
-          hi: 'पात्रता अवधि की पुष्टि करें',
-          mr: 'पात्रता कालावधी तपासा',
+          en: 'Understand the service',
+          hi: 'सेवा समझें',
+          mr: 'सेवा समजून घ्या',
         },
         explanation: {
           en: 'Ensure you have residence proofs dating back at least 10 or 15 years depending on state rules.',
@@ -359,9 +359,9 @@ export const SERVICES_DATA: Service[] = [
       {
         stepNumber: 2,
         title: {
-          en: 'Complete Online Application & Affidavit',
-          hi: 'ऑनलाइन फॉर्म और शपथ पत्र भरें',
-          mr: 'ऑनलाइन अर्ज व स्वयंघोषणापत्र भरा',
+          en: 'Check your documents',
+          hi: 'दस्तावेज जांचें',
+          mr: 'कागदपत्रे तपासा',
         },
         explanation: {
           en: 'Enter your address history and upload scanned identity and school records.',
@@ -383,9 +383,9 @@ export const SERVICES_DATA: Service[] = [
       {
         stepNumber: 3,
         title: {
-          en: 'Verification by Revenue Authority',
-          hi: 'राजस्व अधिकारी द्वारा सत्यापन',
-          mr: 'मंडळ अधिकारी / तलाठी पडताळणी',
+          en: 'Apply online',
+          hi: 'ऑनलाइन आवेदन करें',
+          mr: 'ऑनलाइन अर्ज करा',
         },
         explanation: {
           en: 'The Talathi/Circle Inspector verifies the continuous stay and submits an inquiry report to the Sub-Divisional Officer.',
@@ -406,9 +406,9 @@ export const SERVICES_DATA: Service[] = [
       {
         stepNumber: 4,
         title: {
-          en: 'Download Digitally Signed Certificate',
-          hi: 'डिजिटल हस्ताक्षर युक्त प्रमाणपत्र डाउनलोड करें',
-          mr: 'डिजिटल दाखला डाउनलोड करा',
+          en: 'Download certificate',
+          hi: 'प्रमाणपत्र डाउनलोड करें',
+          mr: 'दाखला डाउनलोड करा',
         },
         explanation: {
           en: 'Once approved by the competent authority, download the certificate with valid digital signature.',
@@ -444,9 +444,9 @@ export const SERVICES_DATA: Service[] = [
       mr: ['अधिवास प्रमाणपत्र', 'रहिवासी दाखला', 'डोमिसाइल दाखला', 'कुठे राहतो पुरावा', 'स्थानिक रहिवासी'],
     },
     disclaimer: {
-      en: 'Domicile rules and residency year limits vary slightly by state. Always check your specific state regulations.',
-      hi: 'निवास के वर्ष और नियम अलग-अलग राज्यों में भिन्न हो सकते हैं। अपने राज्य के नियमों की पुष्टि अवश्य करें।',
-      mr: 'वास्तव्याची वर्षांची अट राज्यानुसार बदलू शकते. कृपया अधिकृत नियमावली तपासून घ्या.',
+      en: 'Residency period may vary by state. Verify on the official portal.',
+      hi: 'निवास की अवधि राज्य अनुसार बदल सकती है। पोर्टल पर जांचें।',
+      mr: 'वास्तव्याची अट राज्यानुसार बदलू शकते. अधिकृत पोर्टल तपासून घ्या.',
     },
   },
   {
@@ -454,14 +454,14 @@ export const SERVICES_DATA: Service[] = [
     slug: 'digilocker-guidance',
     category: 'identity',
     name: {
-      en: 'DigiLocker Digital Documents Guidance',
-      hi: 'डिजीलॉकर डिजिटल दस्तावेज मार्गदर्शन',
-      mr: 'डिजीलॉकर डिजिटल कागदपत्रे मार्गदर्शन',
+      en: 'DigiLocker',
+      hi: 'डिजीलॉकर',
+      mr: 'डिजीलॉकर',
     },
     shortDescription: {
-      en: 'Access, store, and present legally valid digital copies of driving license, Aadhaar, marksheet, and vehicle RC issued directly by authorities.',
-      hi: 'ड्राइविंग लाइसेंस, आधार, मार्कशीट और आरसी जैसे दस्तावेजों की कानूनी रूप से मान्य डिजिटल प्रतियां सीधे प्राप्त और सुरक्षित रखें।',
-      mr: 'ड्रायव्हिंग लायसन्स, आधार, गुणपत्रिका आणि आरसी यांसारखी शासकीय कागदपत्रे डिजिटल स्वरूपात सुरक्षित साठवून कायदेशीररीत्या वापरण्याचे साधन.',
+      en: 'Access your documents',
+      hi: 'अपने दस्तावेज प्राप्त करें',
+      mr: 'तुमची कागदपत्रे मिळवा',
     },
     whoItMayHelp: {
       en: [
@@ -498,9 +498,9 @@ export const SERVICES_DATA: Service[] = [
       {
         id: 'digi-aadhaar',
         name: {
-          en: 'Aadhaar Card Linked to Mobile',
-          hi: 'मोबाइल से लिंक आधार कार्ड',
-          mr: 'मोबाईल लिंक असलेले आधार कार्ड',
+          en: 'Aadhaar (linked to mobile)',
+          hi: 'आधार (मोबाइल से लिंक)',
+          mr: 'आधार (मोबाईल लिंक)',
         },
         description: {
           en: 'Required to create and verify your legal DigiLocker account.',
@@ -514,9 +514,9 @@ export const SERVICES_DATA: Service[] = [
       {
         stepNumber: 1,
         title: {
-          en: 'Sign Up with Aadhaar & Mobile OTP',
-          hi: 'आधार और मोबाइल ओटीपी से खाता बनाएं',
-          mr: 'आधार आणि मोबाईल ओटीपीने खाते तयार करा',
+          en: 'Create account',
+          hi: 'खाता बनाएं',
+          mr: 'खाते तयार करा',
         },
         explanation: {
           en: 'Go to digilocker.gov.in or install the official DigiLocker app and register using your 12-digit Aadhaar number.',
@@ -538,9 +538,9 @@ export const SERVICES_DATA: Service[] = [
       {
         stepNumber: 2,
         title: {
-          en: 'Search and Pull Official Documents',
-          hi: 'आधिकारिक दस्तावेज खोजें और लिंक करें',
-          mr: 'अधिकृत कागदपत्रे शोधा आणि खात्यात जोडा',
+          en: 'Search document',
+          hi: 'दस्तावेज खोजें',
+          mr: 'कागदपत्र शोधा',
         },
         explanation: {
           en: 'Go to "Search Documents", select the issuing authority (e.g. MoRTH for Driving License or CBSE for Marksheet), and enter your document number.',
@@ -561,9 +561,9 @@ export const SERVICES_DATA: Service[] = [
       {
         stepNumber: 3,
         title: {
-          en: 'Present Digitally Signed Document Legally',
-          hi: 'कानूनी रूप से डिजिटल दस्तावेज प्रस्तुत करें',
-          mr: 'कायदेशीर गरजेनुसार डिजिटल कागदपत्र दाखवा',
+          en: 'Show digital copy',
+          hi: 'डिजिटल कॉपी दिखाएं',
+          mr: 'डिजिटल कागदपत्र दाखवा',
         },
         explanation: {
           en: 'Open the DigiLocker app to show the QR-verified document whenever requested by authorities.',
@@ -599,9 +599,9 @@ export const SERVICES_DATA: Service[] = [
       mr: ['डिजीलॉकर', 'डिजिटल कागदपत्रे', 'ड्रायव्हिंग लायसन्स मोबाईलमध्ये', 'गुणपत्रिका', 'आरसी बुक'],
     },
     disclaimer: {
-      en: 'DigiLocker is an official Government of India service. Sahayak AI only guides you on how to use it safely and does not store your credentials.',
-      hi: 'डिजीलॉकर भारत सरकार की आधिकारिक सेवा है। सहायक केवल सुरक्षित उपयोग का मार्गदर्शन करता है और आपके क्रेडेंशियल सुरक्षित नहीं रखता।',
-      mr: 'डिजीलॉकर ही भारत सरकारची अधिकृत प्रणाली आहे. सहायक केवळ मार्गदर्शनासाठी असून तुमचा कोणताही पासवर्ड साठवत नाही.',
+      en: 'Sahayak AI does not store passwords or documents. We provide safe guidance only.',
+      hi: 'सहायक कोई पासवर्ड या दस्तावेज संचित नहीं करता। केवल सुरक्षित मार्गदर्शन।',
+      mr: 'सहायक कोणताही पासवर्ड किंवा कागदपत्र साठवत नाही. केवळ सुरक्षित मार्गदर्शन.',
     },
   },
   {
@@ -609,14 +609,14 @@ export const SERVICES_DATA: Service[] = [
     slug: 'post-matric-scholarship',
     category: 'education',
     name: {
-      en: 'Post-Matric Scholarship Discovery',
-      hi: 'पोस्ट-मैट्रिक छात्रवृत्ति मार्गदर्शन',
-      mr: 'मॅट्रिकोत्तर शिष्यवृत्ती मार्गदर्शन',
+      en: 'Scholarship',
+      hi: 'छात्रवृत्ति',
+      mr: 'शिष्यवृत्ती',
     },
     shortDescription: {
-      en: 'Financial assistance and tuition fee waivers for eligible students pursuing 11th, 12th, diploma, undergraduate, and postgraduate degrees.',
-      hi: '11वीं, 12वीं, डिप्लोमा, स्नातक और स्नातकोत्तर की पढ़ाई करने वाले पात्र विद्यार्थियों के लिए वित्तीय सहायता व शिक्षण शुल्क माफी।',
-      mr: '११ वी, १२ वी, पदविका (डिप्लोमा), पदवी आणि पदव्युत्तर शिक्षण घेणाऱ्या गरजू व पात्र विद्यार्थ्यांसाठी शासकीय शिष्यवृत्ती व फी सवलत.',
+      en: 'Find education support',
+      hi: 'शिक्षा सहायता खोजें',
+      mr: 'शिक्षणासाठी आर्थिक मदत मिळवा',
     },
     whoItMayHelp: {
       en: [
@@ -662,9 +662,9 @@ export const SERVICES_DATA: Service[] = [
       {
         id: 'sch-income',
         name: {
-          en: 'Current Year Income Certificate',
-          hi: 'चालू वर्ष का आय प्रमाण पत्र',
-          mr: 'चालू वर्षाचा उत्पन्नाचा दाखला',
+          en: 'Income certificate',
+          hi: 'आय प्रमाण पत्र',
+          mr: 'उत्पन्न दाखला',
         },
         description: {
           en: 'Tehsildar issued certificate reflecting family earnings.',
@@ -676,9 +676,9 @@ export const SERVICES_DATA: Service[] = [
       {
         id: 'sch-fee',
         name: {
-          en: 'College Admission Fee Receipt',
-          hi: 'कॉलेज प्रवेश शुल्क रसीद',
-          mr: 'कॉलेज फी भरल्याची पावती',
+          en: 'Fee receipt',
+          hi: 'फीस रसीद',
+          mr: 'फी पावती',
         },
         description: {
           en: 'Receipt confirming active enrollment in current academic year.',
@@ -690,8 +690,8 @@ export const SERVICES_DATA: Service[] = [
       {
         id: 'sch-bank',
         name: {
-          en: 'Aadhaar-Seeded Bank Passbook',
-          hi: 'आधार से लिंक बैंक पासबुक',
+          en: 'Aadhaar-linked bank passbook',
+          hi: 'आधार लिंक बैंक पासबुक',
           mr: 'आधार लिंक बँक पासबुक',
         },
         description: {
@@ -706,9 +706,9 @@ export const SERVICES_DATA: Service[] = [
       {
         stepNumber: 1,
         title: {
-          en: 'Check Aadhaar Bank Seeding (NPCI)',
-          hi: 'आधार बैंक सीडिंग (NPCI) जांचें',
-          mr: 'बँक खात्याची आधार सीडिंग (NPCI) स्थिती तपासा',
+          en: 'Check bank link',
+          hi: 'बैंक लिंक जांचें',
+          mr: 'बँक खाते तपासा',
         },
         explanation: {
           en: 'Government scholarship funds are deposited directly via Aadhaar-enabled DBT. Check with your bank branch that your savings account is NPCI active.',
@@ -729,9 +729,9 @@ export const SERVICES_DATA: Service[] = [
       {
         stepNumber: 2,
         title: {
-          en: 'Register on the State Scholarship Portal',
-          hi: 'राज्य छात्रवृत्ति पोर्टल पर पंजीकरण करें',
-          mr: 'महाडीबीटी किंवा नॅशनल स्कॉलरशिप पोर्टलवर नोंदणी करा',
+          en: 'Register profile',
+          hi: 'प्रोफाइल बनाएं',
+          mr: 'नोंदणी करा',
         },
         explanation: {
           en: 'Visit the official portal (such as MahaDBT in Maharashtra or NSP nationally) and create your student profile.',
@@ -753,9 +753,9 @@ export const SERVICES_DATA: Service[] = [
       {
         stepNumber: 3,
         title: {
-          en: 'Upload Documents & Submit to College Desk',
-          hi: 'दस्तावेज अपलोड करें और कॉलेज को सबमिट करें',
-          mr: 'कागदपत्रे अपलोड करून कॉलेजकडे पडताळणीसाठी पाठवा',
+          en: 'Apply online',
+          hi: 'ऑनलाइन आवेदन करें',
+          mr: 'ऑनलाइन अर्ज करा',
         },
         explanation: {
           en: 'Upload clean scans of income certificate, marksheets, and fee receipt, then click apply.',
@@ -791,9 +791,9 @@ export const SERVICES_DATA: Service[] = [
       mr: ['शिष्यवृत्ती', 'शिक्षणासाठी मदत', 'कॉलेज फी सवलत', 'महाडीबीटी', 'विद्यार्थी सहाय्य', 'मुलींचे शिक्षण'],
     },
     disclaimer: {
-      en: 'Scholarship quotas and application deadlines are determined solely by government notifications each academic year.',
-      hi: 'छात्रवृत्ति की अंतिम तिथियां और पात्रता शर्तें प्रत्येक वर्ष सरकारी अधिसूचना द्वारा तय की जाती हैं।',
-      mr: 'शिष्यवृत्तीचे निकष आणि अंतिम मुदत शासन निर्णयानुसार वेळोवेळी बदलू शकते.',
+      en: 'Deadlines and quotas vary each year. Verify on the official portal.',
+      hi: 'अंतिम तिथि हर वर्ष बदलती है। आधिकारिक पोर्टल पर जांचें।',
+      mr: 'अंतिम मुदत वेळोवेळी बदलू शकते. अधिकृत पोर्टल तपासून घ्या.',
     },
   },
   {
@@ -801,14 +801,14 @@ export const SERVICES_DATA: Service[] = [
     slug: 'digital-payments-safety',
     category: 'digital_finance',
     name: {
-      en: 'Digital Payments & UPI Learning Guide',
-      hi: 'डिजिटल भुगतान और यूपीआई सुरक्षा मार्गदर्शन',
-      mr: 'डिजिटल पेमेंट्स आणि सुरक्षित UPI मार्गदर्शन',
+      en: 'UPI Help',
+      hi: 'यूपीआई मदद',
+      mr: 'UPI मदत',
     },
     shortDescription: {
-      en: 'Learn how to pay bills and send money safely using UPI, verify recipients, understand payment requests, and protect your bank account from frauds.',
-      hi: 'यूपीआई से सुरक्षित रूप से बिल भरने और पैसे भेजने का तरीका सीखें, प्राप्तकर्ता की पुष्टि करें और ऑनलाइन धोखाधड़ी से बचें।',
-      mr: 'UPI द्वारे सुरक्षित पैसे पाठवणे, बिलांचा भरणा करणे, दुकानदार/प्राप्तकर्त्याची खात्री करणे आणि सायबर फसवणुकीपासून सुरक्षित राहण्याचे सोपे मार्गदर्शन.',
+      en: 'Learn digital payments',
+      hi: 'डिजिटल पेमेंट सीखें',
+      mr: 'डिजिटल पेमेंट्स शिका',
     },
     whoItMayHelp: {
       en: [
@@ -849,9 +849,9 @@ export const SERVICES_DATA: Service[] = [
       {
         stepNumber: 1,
         title: {
-          en: 'Golden Rule: UPI PIN is ONLY for SENDING Money',
-          hi: 'स्वर्ण नियम: यूपीआई पिन केवल पैसे भेजने के लिए है',
-          mr: 'सुवर्ण नियम: UPI पिन फक्त पैसे पाठवण्यासाठी लागतो',
+          en: 'Understand UPI PIN',
+          hi: 'यूपीआई पिन समझें',
+          mr: 'UPI पिन समजून घ्या',
         },
         explanation: {
           en: 'You NEVER need to enter your UPI PIN to receive money, win a prize, or get a refund. If someone asks you to enter a PIN to receive funds, it is a scam.',
@@ -872,9 +872,9 @@ export const SERVICES_DATA: Service[] = [
       {
         stepNumber: 2,
         title: {
-          en: 'Always Verify the Recipient Name Before Typing PIN',
-          hi: 'पिन डालने से पहले प्राप्तकर्ता का नाम अवश्य जांचें',
-          mr: 'पिन टाकण्यापूर्वी समोरच्या व्यक्तीचे नाव नक्की तपासा',
+          en: 'Check recipient name',
+          hi: 'प्राप्तकर्ता का नाम जांचें',
+          mr: 'समोरचे नाव तपासा',
         },
         explanation: {
           en: 'When you scan a QR code or enter a phone number, the app displays the official registered account holder name. Look at it carefully.',
@@ -895,9 +895,9 @@ export const SERVICES_DATA: Service[] = [
       {
         stepNumber: 3,
         title: {
-          en: 'What to Do If Money is Deducted But Payment Fails',
-          hi: 'यदि पैसे कट जाएं लेकिन भुगतान विफल हो जाए तो क्या करें',
-          mr: 'खात्यातून पैसे कापले गेले पण समोर पोहोचले नाहीत तर काय करावे?',
+          en: 'Payment failed help',
+          hi: 'विफल भुगतान मदद',
+          mr: 'पैसे अडकल्यास काय करावे',
         },
         explanation: {
           en: 'Don’t panic. Under RBI guidelines, interbank settlements auto-reverse within 24 to 48 banking hours. Check your transaction status in the app.',
@@ -933,9 +933,9 @@ export const SERVICES_DATA: Service[] = [
       mr: ['यूपीआय', 'डिजिटल पेमेंट', 'पैसे पाठवणे', 'क्यूआर कोड', 'मोबाईलवरून पैसे', 'यूपीआय सुरक्षा', 'पिन'],
     },
     disclaimer: {
-      en: 'Sahayak AI provides educational guidance only. We will NEVER ask for your UPI PIN, OTP, password, or bank credentials. Sahayak does not execute financial transactions.',
-      hi: 'सहायक एआई केवल शैक्षणिक मार्गदर्शन प्रदान करता है। हम कभी भी आपका पिन, ओटीपी या पासवर्ड नहीं मांगते। सहायक कोई वित्तीय लेनदेन नहीं करता।',
-      mr: 'सहायक एआय केवळ जनजागृतीसाठी आहे. आम्ही कधीही तुमचा UPI पिन, पासवर्ड किंवा OTP मागत नाही. सहायकवर कोणताही आर्थिक व्यवहार होत नाही.',
+      en: 'Educational guidance only. We never ask for your PIN or OTP.',
+      hi: 'केवल मार्गदर्शन। हम कभी भी आपका पिन या ओटीपी नहीं मांगते।',
+      mr: 'केवळ मार्गदर्शनासाठी. आम्ही कधीही तुमचा पिन किंवा OTP मागत नाही.',
     },
   },
   {
@@ -943,14 +943,14 @@ export const SERVICES_DATA: Service[] = [
     slug: 'senior-citizen-assistance',
     category: 'social_welfare',
     name: {
-      en: 'Senior Citizen Digital Assistance & Pension Guidance',
-      hi: 'वरिष्ठ नागरिक डिजिटल सहायता एवं पेंशन मार्गदर्शन',
-      mr: 'ज्येष्ठ नागरिक डिजिटल सहाय्य व पेन्शन मार्गदर्शन',
+      en: 'Senior Citizen Benefits',
+      hi: 'वरिष्ठ नागरिक सेवा',
+      mr: 'ज्येष्ठ नागरिक सेवा',
     },
     shortDescription: {
-      en: 'Guidance for senior citizens (age 60+) on submitting digital life certificates (Jeevan Pramaan), applying for senior ID cards, and government pension services.',
-      hi: 'वरिष्ठ नागरिकों (60 वर्ष+) के लिए डिजिटल जीवन प्रमाण पत्र, वरिष्ठ नागरिक पहचान पत्र और पेंशन संबंधित सेवाओं का सरल मार्गदर्शन।',
-      mr: '६० वर्षे पूर्ण झालेल्या ज्येष्ठ नागरिकांसाठी डिजिटल जीवन प्रमाणपत्र (जीवन प्रमाण), ज्येष्ठ नागरिक ओळखपत्र आणि शासकीय पेन्शन सेवांचे सुलभ मार्गदर्शन.',
+      en: 'Pension and senior benefits',
+      hi: 'पेंशन और वरिष्ठ लाभ',
+      mr: 'पेन्शन आणि ज्येष्ठ नागरिक लाभ',
     },
     whoItMayHelp: {
       en: [
@@ -990,9 +990,9 @@ export const SERVICES_DATA: Service[] = [
       {
         id: 'snr-ppo',
         name: {
-          en: 'Pension Payment Order (PPO) Document',
-          hi: 'पेंशन पेमेंट ऑर्डर (PPO) दस्तावेज',
-          mr: 'पीपीओ (PPO) कागदपत्र किंवा पेन्शन पासबुक',
+          en: 'PPO number / passbook',
+          hi: 'पीपीओ नंबर / पासबुक',
+          mr: 'पीपीओ क्रमांक / पासबुक',
         },
         description: {
           en: 'The unique reference number assigned to every central/state pensioner.',
@@ -1006,9 +1006,9 @@ export const SERVICES_DATA: Service[] = [
       {
         stepNumber: 1,
         title: {
-          en: 'Digital Life Certificate (Jeevan Pramaan) Overview',
-          hi: 'डिजिटल जीवन प्रमाण पत्र समझें',
-          mr: 'डिजिटल जीवन प्रमाणपत्राची माहिती घ्या',
+          en: 'Understand life certificate',
+          hi: 'जीवन प्रमाण समझें',
+          mr: 'हयातीचा दाखला समजून घ्या',
         },
         explanation: {
           en: 'Every year in November, pensioners can generate their life certificate digitally using face authentication on their smartphone without standing in queues.',
@@ -1030,9 +1030,9 @@ export const SERVICES_DATA: Service[] = [
       {
         stepNumber: 2,
         title: {
-          en: 'Submit via Face RD or Visit Nearest Post Office / CSC',
-          hi: 'फेस आरडी ऐप अथवा नजदीकी डाकघर से जमा करें',
-          mr: 'फेस ॲपद्वारे किंवा जवळच्या पोस्टमन / ई-सेवा केंद्राद्वारे सादर करा',
+          en: 'Submit certificate',
+          hi: 'प्रमाणपत्र जमा करें',
+          mr: 'दाखला सादर करा',
         },
         explanation: {
           en: 'Install the official "Jeevan Pramaan" and "Aadhaar FaceRD" apps from Google Play Store, or request a doorstep postman visit via India Post Payments Bank.',
@@ -1068,9 +1068,9 @@ export const SERVICES_DATA: Service[] = [
       mr: ['ज्येष्ठ नागरिक', 'पेन्शन', 'हयातीचा दाखला', 'जीवन प्रमाण', 'वृद्धापकाळ पेन्शन', 'म्हातारपण'],
     },
     disclaimer: {
-      en: 'Doorstep postman services may carry a nominal statutory fee (~₹70) set by India Post Payments Bank.',
-      hi: 'डाक विभाग की घर बैठे सेवा के लिए मामूली निर्धारित शुल्क (~₹70) हो सकता है।',
-      mr: 'पोस्टमनच्या घरपोच सेवेसाठी डाक विभागाचे अल्प शासकीय शुल्क लागू असू शकते.',
+      en: 'Doorstep postman service may carry a small fee (~₹70).',
+      hi: 'घर बैठे डाक सेवा के लिए मामूली शुल्क (~₹70) हो सकता है।',
+      mr: 'घरपोच पोस्टमन सेवेसाठी अल्प शासकीय शुल्क (~₹७०) असू शकते.',
     },
   },
   {
@@ -1078,14 +1078,14 @@ export const SERVICES_DATA: Service[] = [
     slug: 'public-grievance',
     category: 'grievances',
     name: {
-      en: 'Public Grievance Redressal Guidance (CPGRAMS / Aaple Sarkar)',
-      hi: 'जन शिकायत निवारण मार्गदर्शन (CPGRAMS / आपले सरकार)',
-      mr: 'नागरी तक्रार निवारण मार्गदर्शन (आपले सरकार / CPGRAMS)',
+      en: 'Public Grievance',
+      hi: 'सरकारी शिकायत',
+      mr: 'नागरी तक्रार',
     },
     shortDescription: {
-      en: 'File, track, and escalate complaints regarding delayed government services, missing welfare benefits, ration issues, or unresponsive administrative departments.',
-      hi: 'सरकारी सेवाओं में देरी, अटकी योजनाओं, राशन की समस्याओं या विभागीय शिकायतों को आधिकारिक रूप से दर्ज और ट्रैक करें।',
-      mr: 'शासकीय सेवांना होणारा विलंब, अडकलेला लाभ, रेशनची तक्रार किंवा प्रशासकीय अडचणी यांबद्दल अधिकृत तक्रार नोंदवणे व पाठपुरावा करणे.',
+      en: 'File complaints with government',
+      hi: 'सरकारी शिकायत दर्ज करें',
+      mr: 'शासकीय तक्रार नोंदवा',
     },
     whoItMayHelp: {
       en: [
@@ -1126,9 +1126,9 @@ export const SERVICES_DATA: Service[] = [
       {
         stepNumber: 1,
         title: {
-          en: 'Identify Central vs State Department',
-          hi: 'केंद्र अथवा राज्य विभाग की पहचान करें',
-          mr: 'तक्रार केंद्र की राज्य शासनाशी संबंधित आहे ते ओळखा',
+          en: 'Identify department',
+          hi: 'विभाग पहचानें',
+          mr: 'विभाग ओळखा',
         },
         explanation: {
           en: 'State matters (revenue, ration, electricity, municipal roads) go to your state portal (e.g. Aaple Sarkar Grievance). Central matters (railways, postal, national banks, EPFO) go to CPGRAMS.',
@@ -1150,9 +1150,9 @@ export const SERVICES_DATA: Service[] = [
       {
         stepNumber: 2,
         title: {
-          en: 'Write Clear, Factual Grievance Details',
-          hi: 'तथ्यों के साथ स्पष्ट शिकायत दर्ज करें',
-          mr: 'मुद्देसूद आणि स्पष्ट भाषेत तक्रार मांडा',
+          en: 'Write complaint',
+          hi: 'शिकायत लिखें',
+          mr: 'तक्रार लिहा',
         },
         explanation: {
           en: 'State your application token number, date of submission, and the exact action pending. Avoid emotional expressions; focus on documented dates.',
@@ -1188,9 +1188,9 @@ export const SERVICES_DATA: Service[] = [
       mr: ['तक्रार', 'शासकीय तक्रार', 'काम होत नाही', 'तक्रार नोंदणी', 'विलंब तक्रार', 'दाद मागणे'],
     },
     disclaimer: {
-      en: 'Grievance portals are for administrative redressal. Matters pending before judicial courts (sub-judice) cannot be addressed through grievance portals.',
-      hi: 'न्यायालय में विचाराधीन मामलों की सुनवाई शिकायत पोर्टल पर नहीं की जा सकती।',
-      mr: 'न्यायालयीन प्रकरणांमध्ये तक्रार पोर्टल हस्तक्षेप करू शकत नाही.',
+      en: 'Court matters cannot be filed on grievance portals.',
+      hi: 'कोर्ट के मामलों की शिकायत पोर्टल पर नहीं की जा सकती।',
+      mr: 'न्यायालयीन प्रकरणे तक्रार पोर्टलवर दाखल करता येत नाहीत.',
     },
   },
   {
@@ -1198,14 +1198,14 @@ export const SERVICES_DATA: Service[] = [
     slug: 'ration-card-services',
     category: 'social_welfare',
     name: {
-      en: 'Ration Card Guidance & Food Security',
-      hi: 'राशन कार्ड मार्गदर्शन एवं खाद्य सुरक्षा',
-      mr: 'रेशन कार्ड मार्गदर्शन व अन्न सुरक्षा',
+      en: 'Ration Card',
+      hi: 'राशन कार्ड',
+      mr: 'रेशन कार्ड',
     },
     shortDescription: {
-      en: 'Guidance on adding family members to a ration card, checking food grain quota status under One Nation One Ration Card (ONORC), and address updates.',
-      hi: 'राशन कार्ड में नए सदस्यों का नाम जोड़ना, राशन कोटा स्थिति जांचना और वन नेशन वन राशन कार्ड (ONORC) की जानकारी।',
-      mr: 'रेशन कार्डमध्ये नाव वाढवणे/कमी करणे, मिळणारे धान्य तपासणे आणि "वन नेशन वन रेशन कार्ड" योजनेचा लाभ घेण्याचे मार्गदर्शन.',
+      en: 'Food grain support card',
+      hi: 'राशन कार्ड और अनाज सहायता',
+      mr: 'रेशन कार्ड आणि धान्य सहाय्य',
     },
     whoItMayHelp: {
       en: [
@@ -1246,9 +1246,9 @@ export const SERVICES_DATA: Service[] = [
       {
         stepNumber: 1,
         title: {
-          en: 'Check Aadhaar Seeding of All Members',
-          hi: 'सभी सदस्यों का आधार लिंक होना सुनिश्चित करें',
-          mr: 'सर्व सदस्यांचे आधार रेशनशी लिंक असल्याची खात्री करा',
+          en: 'Check family link',
+          hi: 'सदस्य आधार जांचें',
+          mr: 'सदस्य आधार तपासा',
         },
         explanation: {
           en: 'Food grains under National Food Security Act (NFSA) are distributed using biometric e-PoS machines. Every family member must have their Aadhaar seeded.',
@@ -1285,9 +1285,9 @@ export const SERVICES_DATA: Service[] = [
       mr: ['रेशन कार्ड', 'अन्नधान्य', 'रेशन दुकानात धान्य', 'रेशनवर नाव वाढवणे', 'रेशनिंग'],
     },
     disclaimer: {
-      en: 'Ration allocation depends on NFSA priority household (PHH) or Antyodaya (AAY) categorization.',
-      hi: 'राशन की पात्रता और कोटा प्राथमिकता परिवार (PHH) अथवा अंत्योदय (AAY) श्रेणी पर निर्भर करता है।',
-      mr: 'धान्याचे प्रमाण तुमच्या रेशन कार्डच्या प्रवर्गावर (बीपीएल/अंत्योदय/प्राधान्य कुटुंब) अवलंबून असते.',
+      en: 'Grain quota depends on your ration card category.',
+      hi: 'अनाज का कोटा राशन कार्ड श्रेणी पर निर्भर करता है।',
+      mr: 'धान्याचे प्रमाण रेशन कार्डच्या प्रवर्गावर अवलंबून असते.',
     },
   },
   {
@@ -1295,14 +1295,14 @@ export const SERVICES_DATA: Service[] = [
     slug: 'aadhaar-address-update',
     category: 'identity',
     name: {
-      en: 'Aadhaar Address Update Online Guidance',
-      hi: 'आधार पता ऑनलाइन संशोधन मार्गदर्शन',
-      mr: 'आधार कार्डवरील पत्ता ऑनलाइन बदलण्याचे मार्गदर्शन',
+      en: 'Aadhaar Address Update',
+      hi: 'आधार पता बदलाव',
+      mr: 'आधार पत्ता बदल',
     },
     shortDescription: {
-      en: 'Step-by-step instructions to safely update your residential address in Aadhaar using the official UIDAI myAadhaar portal from home.',
-      hi: 'घर बैठे आधिकारिक UIDAI myAadhaar पोर्टल से अपने आधार कार्ड में पता बदलने की सुरक्षित प्रक्रिया।',
-      mr: 'घरी बसून अधिकृत myAadhaar पोर्टलवरून आधार कार्डवरील पत्ता ऑनलाइन बदलण्याची सोपी व सुरक्षित पद्धत.',
+      en: 'Update your Aadhaar address',
+      hi: 'आधार का पता बदलें',
+      mr: 'आधारवरील पत्ता अपडेट करा',
     },
     whoItMayHelp: {
       en: [
@@ -1343,9 +1343,9 @@ export const SERVICES_DATA: Service[] = [
       {
         stepNumber: 1,
         title: {
-          en: 'Log in to Official myAadhaar Portal',
-          hi: 'आधिकारिक myAadhaar पोर्टल पर लॉगिन करें',
-          mr: 'अधिकृत myAadhaar पोर्टलवर लॉगिन करा',
+          en: 'Log in to portal',
+          hi: 'पोर्टल पर लॉगिन करें',
+          mr: 'पोर्टलवर लॉगिन करा',
         },
         explanation: {
           en: 'Always verify the URL starts with "myaadhaar.uidai.gov.in". Never click on unverified search ad links claiming to update Aadhaar.',
@@ -1382,9 +1382,9 @@ export const SERVICES_DATA: Service[] = [
       mr: ['आधार पत्ता बदल', 'आधार कार्ड दुरुस्ती', 'पत्ता बदलणे', 'माय आधार', 'नवीन पत्ता'],
     },
     disclaimer: {
-      en: 'Only address can be updated online. Name, date of birth, mobile number, and biometrics require visiting an authorized Aadhaar Seva Kendra in person.',
-      hi: 'ऑनलाइन केवल पता बदला जा सकता है। नाम, जन्मतिथि या मोबाइल नंबर बदलने के लिए आधार सेवा केंद्र जाना अनिवार्य है।',
-      mr: 'ऑनलाइन फक्त पत्ता बदलता येतो. नाव, जन्मतारीख किंवा मोबाईल नंबर बदलण्यासाठी प्रत्यक्ष आधार केंद्रात जावे लागते.',
+      en: 'Only address can be updated online. Other changes require an Aadhaar center visit.',
+      hi: 'ऑनलाइन केवल पता बदलता है। अन्य बदलाव के लिए आधार केंद्र जाना होता है।',
+      mr: 'ऑनलाइन फक्त पत्ता बदलता येतो. इतर बदलांसाठी आधार केंद्रात जावे लागते.',
     },
   },
 ];

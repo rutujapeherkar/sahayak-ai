@@ -41,27 +41,23 @@ export default function HomePage() {
     router.push(`/assistant?q=${encodeURIComponent(exampleText)}`);
   };
 
-  // Predefined civic prompt examples
+  // Short, clear prompt examples
   const examplePrompts = [
     {
       text: 'मला उत्पन्न प्रमाणपत्र काढायचं आहे.',
-      lang: 'mr',
-      label: 'उत्पन्न प्रमाणपत्र (Income Certificate)',
+      label: language === 'mr' ? 'उत्पन्न दाखला' : language === 'hi' ? 'आय प्रमाण पत्र' : 'Income certificate',
     },
     {
       text: 'I need a document that proves where I live.',
-      lang: 'en',
-      label: 'Residence / Domicile Certificate',
+      label: language === 'mr' ? 'रहिवासी दाखला' : language === 'hi' ? 'निवास प्रमाण पत्र' : 'Proof of residence',
     },
     {
       text: 'मला UPI वापरायला शिकायचं आहे.',
-      lang: 'mr',
-      label: 'UPI पेमेंट्स व सुरक्षितता (Digital Payments)',
+      label: language === 'mr' ? 'UPI मदत' : language === 'hi' ? 'यूपीआई मदद' : 'UPI help',
     },
     {
       text: 'मुझे कॉलेज फीस और छात्रवृत्ति के लिए सरकारी मदद चाहिए।',
-      lang: 'hi',
-      label: 'कॉलेज छात्रवृत्ति (Post-Matric Scholarship)',
+      label: language === 'mr' ? 'शिष्यवृत्ती' : language === 'hi' ? 'छात्रवृत्ति' : 'Scholarship',
     },
   ];
 
@@ -101,12 +97,6 @@ export default function HomePage() {
       {/* Central Goal Section */}
       <section className="pt-10 pb-12 sm:pt-16 sm:pb-16 px-4 sm:px-6 lg:px-8 border-b border-[var(--border-color)] bg-[var(--bg-surface)]">
         <div className="max-w-3xl mx-auto text-center space-y-4">
-          {/* Subtle civic tag */}
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-[var(--brand-teal-light)] text-[var(--brand-teal)] border border-[var(--brand-teal)]/20">
-            <span className="w-1.5 h-1.5 rounded-full bg-[var(--brand-teal)]" />
-            <span>Digital Inclusion &amp; Public Access</span>
-          </div>
-
           {/* Focal Question */}
           <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-[var(--text-primary)]">
             {t.home.heroQuestion}
@@ -164,9 +154,9 @@ export default function HomePage() {
                   key={idx}
                   type="button"
                   onClick={() => handleSelectExample(example.text)}
-                  className="px-3 py-2 rounded-md border border-[var(--border-color)] bg-[var(--bg-subtle)] hover:bg-[var(--brand-teal-light)] hover:border-[var(--brand-teal)]/40 text-left transition-all text-xs text-[var(--text-primary)] group flex items-center justify-between gap-2 shadow-2xs"
+                  className="px-3.5 py-2 rounded-md border border-[var(--border-color)] bg-[var(--bg-subtle)] hover:bg-[var(--brand-teal-light)] hover:border-[var(--brand-teal)]/40 text-left transition-all text-xs font-medium text-[var(--text-primary)] group flex items-center justify-between gap-2 shadow-2xs"
                 >
-                  <span className="line-clamp-1">{example.text}</span>
+                  <span>{example.label}</span>
                   <ArrowRight className="w-3 h-3 text-[var(--text-muted)] group-hover:text-[var(--brand-teal)] shrink-0" />
                 </button>
               ))}
@@ -176,7 +166,7 @@ export default function HomePage() {
       </section>
 
       {/* Restrained Service Entry Points */}
-      <section className="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <section className="py-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {serviceEntryPoints.map((entry) => {
             const Icon = entry.icon;
@@ -190,10 +180,10 @@ export default function HomePage() {
                   <div className="w-9 h-9 rounded bg-[var(--bg-subtle)] group-hover:bg-[var(--brand-teal-light)] text-[var(--brand-teal)] flex items-center justify-center mb-3 transition-colors">
                     <Icon className="w-5 h-5" />
                   </div>
-                  <h2 className="font-semibold text-sm text-[var(--text-primary)] group-hover:text-[var(--brand-teal)] transition-colors mb-1.5">
+                  <h2 className="font-semibold text-sm text-[var(--text-primary)] group-hover:text-[var(--brand-teal)] transition-colors mb-1">
                     {entry.title}
                   </h2>
-                  <p className="text-xs text-[var(--text-secondary)] leading-relaxed line-clamp-3">
+                  <p className="text-xs text-[var(--text-secondary)] leading-relaxed line-clamp-2">
                     {entry.desc}
                   </p>
                 </div>
@@ -206,28 +196,34 @@ export default function HomePage() {
           })}
         </div>
 
-        {/* Human Assistance Visual Context */}
-        <div className="mt-10 p-6 rounded-md border border-[var(--border-color)] bg-[var(--bg-surface)] flex flex-col md:flex-row items-center justify-between gap-6 shadow-xs">
-          <div className="space-y-2 max-w-xl">
-            <span className="text-[11px] font-bold text-[var(--warm-copper)] tracking-wider uppercase">
-              How Sahayak AI Works
+        {/* How It Works - Clean 3 Steps */}
+        <div className="mt-8 p-5 rounded-md border border-[var(--border-color)] bg-[var(--bg-surface)] flex flex-col md:flex-row items-center justify-between gap-5 shadow-xs">
+          <div className="space-y-1.5 max-w-lg">
+            <span className="text-[11px] font-bold text-[var(--brand-teal)] uppercase tracking-wider">
+              {language === 'mr' ? 'कसे काम करते' : language === 'hi' ? 'कैसे काम करता है' : 'How it works'}
             </span>
-            <h3 className="text-lg font-semibold text-[var(--text-primary)]">
-              We don&apos;t replace digital services. We make them usable.
-            </h3>
-            <p className="text-xs sm:text-sm text-[var(--text-secondary)] leading-relaxed">
-              Every citizen deserves effortless access to civic rights, certificates, and welfare.
-              Sahayak converts complex bureaucratic forms into a calm, step-by-step task journey
-              that you can follow with confidence.
+            <h2 className="text-sm sm:text-base font-semibold text-[var(--text-primary)]">
+              {language === 'mr'
+                ? '१. गरज सांगा → २. पायऱ्या पाहा → ३. अधिकृत अर्ज करा'
+                : language === 'hi'
+                ? '1. जरूरत बताएं → 2. कदम देखें → 3. आधिकारिक आवेदन करें'
+                : '1. Tell us your goal → 2. Follow simple steps → 3. Apply on official portal'}
+            </h2>
+            <p className="text-xs text-[var(--text-secondary)]">
+              {language === 'mr'
+                ? 'शासकीय सेवा प्रत्येकासाठी सोपी आणि सुलभ.'
+                : language === 'hi'
+                ? 'सरकारी सेवाएं सभी के लिए आसान।'
+                : 'Simple steps to complete government services.'}
             </p>
           </div>
 
           <div className="shrink-0 w-full md:w-auto flex justify-center">
             <Image
               src="/images/citizen-assistance.svg"
-              alt="Citizen receiving guided digital public assistance on a mobile device"
-              width={260}
-              height={175}
+              alt="Citizen assistance"
+              width={200}
+              height={130}
               className="rounded-md border border-[var(--border-color)]"
               priority
             />

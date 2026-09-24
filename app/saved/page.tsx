@@ -26,7 +26,7 @@ export default function SavedServicesPage() {
             <span>{t.nav.saved}</span>
           </h1>
           <p className="text-xs sm:text-sm text-[var(--text-secondary)]">
-            Services and checklists you saved for quick access on this device.
+            Services you saved for quick access.
           </p>
         </div>
 
@@ -51,7 +51,7 @@ export default function SavedServicesPage() {
             Nothing saved yet.
           </h2>
           <p className="text-xs text-[var(--text-secondary)] leading-relaxed">
-            Save a service to find it quickly later without having to search again.
+            Save a service to find it later.
           </p>
           <Link
             href="/services"

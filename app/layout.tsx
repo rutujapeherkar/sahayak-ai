@@ -3,9 +3,7 @@ import { Inter, Noto_Sans_Devanagari } from 'next/font/google';
 import './globals.css';
 import { AccessibilityProvider } from '@/context/AccessibilityContext';
 import { SavedServicesProvider } from '@/context/SavedServicesContext';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
-import { MobileNav } from '@/components/layout/MobileNav';
+import { Navbar, Footer, MobileNav } from '@/components/layout';
 
 const inter = Inter({
   subsets: ['latin'],

@@ -77,7 +77,7 @@ export function GuidancePanel({ activeService }: GuidancePanelProps) {
       {/* Step Sequence Overview */}
       <div className="space-y-2.5">
         <span className="text-xs font-semibold text-[var(--text-primary)] block">
-          {t.services.stepByStep} ({activeService.steps.length} {t.task.progress.toLowerCase()}):
+          {t.services.stepByStep}:
         </span>
         <div className="space-y-2">
           {activeService.steps.map((step, idx) => (

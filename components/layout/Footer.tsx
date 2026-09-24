@@ -54,7 +54,7 @@ export function Footer() {
         </div>
 
         <div className="text-center text-[11px] text-[var(--text-muted)] border-t border-[var(--border-color)]/60 pt-4">
-          Sahayak AI — Digital Inclusion & Public Access Layer. Making digital services usable for everyone.
+          Sahayak AI — Digital help for everyone.
         </div>
       </div>
     </footer>
